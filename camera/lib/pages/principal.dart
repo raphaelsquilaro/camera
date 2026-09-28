@@ -209,6 +209,21 @@ class Home extends StatelessWidget {
                 },
               ),
 
+              _menuItem(
+                context: context,
+                icon: Icons.my_location_rounded,
+                title: 'Camera',
+                color: cinzaAzulado,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Camera(),
+                    ),
+                  );
+                },
+              ),
+
               const Spacer(),
 
               // Separador
